@@ -27,3 +27,27 @@
     
     Yes, but since this method (main) is called only once by the JVM, it should protect us against nothing.
     
+6. Why main method is public static?
+    
+    Public: so that the JVM can call it from outside the class/package
+    
+    Static: so that the JVM can invoke the main method without creating an object                
+    
+
+7. What will happen if we declare the main method non-static?
+    
+    A runtime error will be thrown (the compilation will be successful)
+
+8. Can we define a class without a main method?
+    
+    From Java v7, no
+    
+9. Can we declare main method with different access modifier (other than public)?
+
+    No, a runtime error will be thrown (the compilation will be successful)
+    
+10. Can we change return type of main method?
+
+    No, a runtime error will be thrown (the compilation will be successful)
+    
+    

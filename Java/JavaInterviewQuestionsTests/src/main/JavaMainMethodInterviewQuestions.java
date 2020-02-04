@@ -2,7 +2,7 @@ package main;
 
 public class JavaMainMethodInterviewQuestions {
 
-    public synchronized static final void main(String[] args) {
+    public static final void main(String[] args) {
         System.out.printf("Test main(String... args)");
     }
 

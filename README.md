@@ -1,0 +1,1 @@
+When pushing to the remote repo, use: git push https://github.com/yousrasdn/Interview-Questions master
