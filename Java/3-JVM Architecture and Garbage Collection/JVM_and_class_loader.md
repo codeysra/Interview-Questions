@@ -5,10 +5,10 @@
 A VM is a running program that simulated the behavior of a physical machine.
 
 ### What is a Java VM?
- It's running application that provides a runtime environment in which Java programs are executed.
+ It's a running application that provides a runtime environment in which Java programs are executed.
  
-                compiled into   
- .java clases         =>        .class files (byte code)
+                       compiled into   
+        .java clases         =>        .class files (byte code)
  
  then the JVM loads the .class files and executes them
  
