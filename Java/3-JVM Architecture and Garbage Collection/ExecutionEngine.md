@@ -13,4 +13,3 @@ The execution engine is made up of three major sub-components:
     
     3- Garbage Collector: frees up the memory by collecting and removing the unreferenced objects
 
-### Which memory area is used to store static variables?
