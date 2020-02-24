@@ -1,6 +1,5 @@
 # IO Interview Questions
 
-
 ## Overview Questions
 
 ### What is an IO stream?
@@ -79,7 +78,31 @@ object ->
             Writer ->   BufferedWriter
                         PrintWriter
                         
+## Stream vs ReaderWriters
+
+### When to use ByteStreams?
+
+Byte streams process data byte by byte. So byte stream is suitable for processing binary files.
                         
-                        
+### When to use FileInputStream/FileOutputStream and FileReader/FileWriter?
+
+Both FileInputStream/FileOutputStream and FileReader/FileWriter are used to read/write data from a source 
+(either file or socket).
+
+FileInputStream/FileOutputStream are used to read/write binary data, 
+while FileReader/FileWriter are used to read text data (unicode characters).
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
