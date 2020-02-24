@@ -46,3 +46,40 @@ the strea,
    close() is applicable for both the writers and readers.
 
    
+## Readers Questions
+
+### What are the different types of readers?
+    1- FileReader
+    2- BufferedReader
+
+### What's the difference between FileReader and BufferedReader?
+
+FileReader reads data from a file character by character.
+BufferedReader reads data either character by character, or line by line.
+
+BufferedReader is most effecient reader because it buffers the input from the specefied file.
+
+-> it reads large chuncks of data from a file at once and keep this data in a buffer. When we ask for the next
+character or line of data, it gets it from that buffer.
+
+## Writer / Reader hierarchy
+
+### Present the Writer / Reader hierarchy
+
+                                                                    
+            
+                        InputStreamReader  -> FileReader
+            Reader -> 
+                        BufferedReader
+
+object -> 
+
+            
+                        OutputStreamWriter -> FileWriter
+            Writer ->   BufferedWriter
+                        PrintWriter
+                        
+                        
+                        
+
+
