@@ -34,4 +34,16 @@ public class Person implements Comparable<Person> {
 //        return 0;
         return (this.age - o.age);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getCountry() {
+        return country;
+    }
 }

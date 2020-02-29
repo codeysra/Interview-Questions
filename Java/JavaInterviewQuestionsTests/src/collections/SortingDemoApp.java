@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class SortingDemoApp {
 
@@ -28,8 +29,17 @@ public class SortingDemoApp {
         System.out.println("After sorting by name: ");
         printList(personList);
 
-//        System.out.println("Sorting using streams");
-//        personList.stream().sorted().forEach(System.out::println);
+        System.out.println();
+        Collections.shuffle(personList);
+        System.out.println("Sorting using streams");
+        System.out.println("\nBefore sorting: ");
+        printList(personList);
+        personList = personList.stream()
+                .sorted(Comparator.comparing(Person::getName)
+                                  .thenComparing(Person::getAge))
+                .collect(Collectors.toList());
+        System.out.println("\nAfter sorting by name then age using streams: ");
+        printList(personList);
 
     }
 
