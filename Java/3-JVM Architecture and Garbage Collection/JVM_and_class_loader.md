@@ -1,3 +1,22 @@
+Table Of Contents
++ [Whats a Virtual Machine?](#whats-a-virtual-machine-)
++ [What is a Java VM?](#what-is-a-java-vm-)
++ [Is JVM a compiler or interpreter?](#is-jvm-a-compiler-or-interpreter-)
++ [What are JRE, JDK and how are they different from JVM?](#what-are-jre--jdk-and-how-are-they-different-from-jvm-)
++ [How JVM Works?](#how-jvm-works-)
++ [What it is Classloader?](#what-it-is-classloader-)
++ [What activities are performed by the clasloader subsytem?](#what-activities-are-performed-by-the-clasloader-subsytem-)
+  - [Loading Activity](#loading-activity)
+  - [Linking Activity](#linking-activity)
+  - [Initialization Activity](#initialization-activity)
++ [What are the different class loaders used by JVM?](#what-are-the-different-class-loaders-used-by-jvm-)
+  - [Bootstrap class loader](#bootstrap-class-loader)
+  - [Extension class loader](#extension-class-loader)
+  - [Application class loader](#application-class-loader)
++ [How does JVM load the classes?](#how-does-jvm-load-the-classes-)
++ [What is the difference between static and dynamic class loading?](#what-is-the-difference-between-static-and-dynamic-class-loading-)
++ [What it is the difference betweem Class.forName() and ClassLoader.loadClass()?](#what-it-is-the-difference-betweem-classforname---and-classloaderloadclass---)
+    
 # JVM Interview Questions
 
 ### Whats a Virtual Machine?

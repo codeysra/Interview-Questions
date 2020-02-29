@@ -1,3 +1,19 @@
+Table Of Contents
+* [Overview Questions](#overview-questions)
++ [What is collections framework?](#what-is-collections-framework-)
++ [What are the benefits of collection framework?](#what-are-the-benefits-of-collection-framework-)
++ [What are the main interfaces of collection framework?](#what-are-the-main-interfaces-of-collection-framework-)
++ [Describe the collection api hierarchy](#describe-the-collection-api-hierarchy)
+  - [Collection Implementation Details](#collection-implementation-details)
++ [What is the difference between Collection and Collections?](#what-is-the-difference-between-collection-and-collections-)
++ [What are the different ways to iterate over a collection?](#what-are-the-different-ways-to-iterate-over-a-collection-)
++ [Which collections classes provide random access of its elements?](#which-collections-classes-provide-random-access-of-its-elements-)
+* [Collections Implementation Compraison](#collections-implementation-compraison)
++ [What is the difference between Array and Arraylist data structures?](#what-is-the-difference-between-array-and-arraylist-data-structures-)
++ [What is the difference between LinkedList and Arraylist data structures?](#what-is-the-difference-between-linkedlist-and-arraylist-data-structures-)
++ [What is the difference between Stack and Queue?](#what-is-the-difference-between-stack-and-queue-)
+* [Illustrations](#illustrations)
+  
 # Java Collections Interview Questions
 
 ## Overview Questions
@@ -43,6 +59,8 @@ Map interface represents group of object as key:value pairs. The keys are unique
 
 Collections is a class that provided utility methods for the Collection interface.
 
+## Navigation and Sorting
+
 ### What are the different ways to iterate over a collection?
 
     1. Through loops
@@ -50,6 +68,15 @@ Collections is a class that provided utility methods for the Collection interfac
         - Iterator
         - ListIterator
         - Enumeration
+
+### How can we sort Collections?
+
+- Using a datastructure that is made to store elements in a sorted order like TreeSet and TreeHashSe.
+- Using Collections.sort to sort a list. 
+  When using this, we can either use a comparator, 
+  or use the compareTo method if object implements Comparable interface.
+- Using streams
+
 
 ### Which collections classes provide random access of its elements?
 
