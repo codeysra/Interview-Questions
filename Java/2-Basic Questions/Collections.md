@@ -43,6 +43,25 @@ Map interface represents group of object as key:value pairs. The keys are unique
 
 Collections is a class that provided utility methods for the Collection interface.
 
+### What are the different ways to iterate over a collection?
+
+    1. Through loops
+    2. Through cursors
+        - Iterator
+        - ListIterator
+        - Enumeration
+
+### Which collections classes provide random access of its elements?
+
+ArrayList, Vector, Stack, HashMap, HashTable
+
+public class ArrayList<E> extends AbstractList<E> implements List<E>, <b>RandomAccess</b>, ...
+public class Vector<E> extends AbstractList<E> implements List<E>, <b>RandomAccess</b>, ...
+public class Stack<E> extends <b>Vector<E></b>
+
+HashMap used a HashTable as its underlaying data strucutre.
+Hashtable uses array of buckets to store its elements.
+
 ## Collections Implementation Compraison
 
 ### What is the difference between Array and Arraylist data structures?
@@ -66,7 +85,15 @@ Collections is a class that provided utility methods for the Collection interfac
         
     4. Linkedlist consumes more memory space because it has to store the reference of next element on every node.     
 
-    
+### What is the difference between Stack and Queue?
+
+    1. Stack uses LIFO (Last In, First Out).
+       Queue uses FIFO (First In, First Out).
+    2. In a stack, elements are added to the beginning.
+       In a queue, elements are added to the end.
+       The methods used to manipilate a stack are push and pop.
+       Queue has add and remove.       
+    3. In Collection API, queue is a direct inteface of Collection., whereas stack is a class that implementes Vector.                  
 
 
 ## Illustrations
