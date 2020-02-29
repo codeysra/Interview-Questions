@@ -43,6 +43,32 @@ Map interface represents group of object as key:value pairs. The keys are unique
 
 Collections is a class that provided utility methods for the Collection interface.
 
+## Collections Implementation Compraison
+
+### What is the difference between Array and Arraylist data structures?
+
+    1. Array can contain primitive data types and objects, whereas Arraylist can only contain objects.
+    2. Arrays are fixed in size, whereas Arraylist are dynamic.
+    3. Arraylist has more methods to manipulate the data.
+    
+### What is the difference between LinkedList and Arraylist data structures?
+
+    1. Their implemntaton structure:
+        Arraylist is an index based data structure, built on top of a resisable array.
+        Linkedlist is a node based data structure.
+        
+    2. Arraylist provides random access to its elements => O(1) to access an element.
+       Whereas with a linkedlist the time complexity to access an element by index is O(n) 
+       (since we have to iterate over the whole list).
+       
+    3. Linkedlist is faster in general to add or remove elements because no element shift is required. 
+        We just have to insert a new node and update the pointers address accordingly.
+        
+    4. Linkedlist consumes more memory space because it has to store the reference of next element on every node.     
+
+    
+
+
 ## Illustrations
 
 ![](images/collection-interface-hierarchy.png)
