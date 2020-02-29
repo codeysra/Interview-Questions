@@ -89,6 +89,13 @@ public class Stack<E> extends <b>Vector<E></b>
 HashMap used a HashTable as its underlaying data strucutre.
 Hashtable uses array of buckets to store its elements.
 
+### What is the difference between Collection remove() and Iterator remove()?
+
+Collection's remove() allows us to remove an object while not iterating.
+
+Iterator's remove() allows us to remove an object while iterating.
+
+ 
 ## Collections Implementation Compraison
 
 ### What is the difference between Array and Arraylist data structures?
@@ -121,6 +128,56 @@ Hashtable uses array of buckets to store its elements.
        The methods used to manipilate a stack are push and pop.
        Queue has add and remove.       
     3. In Collection API, queue is a direct inteface of Collection., whereas stack is a class that implementes Vector.                  
+
+### What is the difference between a List and Set 
+    1. List allows duplicate elements. In contrast, a set does not.
+    2. List preservs the order of insertion. In contrast, a set does not.
+    
+### What is the difference between HashSet, LinkedHashSet and TreeSet?
+
+Ordering: 
+    HashSet: maintains no order.
+
+    LinkedHashSet: preserves the insersetion order.
+
+    TreeSet: preserves sorting order.
+
+Internal Implementation:
+    HashSet is backed by HashMap.
+    LinkedHashSet is implemented using HashSet and LinkedList.
+    TreeSet is backed by navigable map and TreeMap.
+
+Rapidity:
+    Amongt the three, HashSet is the fastest.
+
+Comparaison of Elements:
+    HashSet and LinkedHashSet use equals() to compare elements.
+    TreeSet uses compareTo().    
+
+
+Insertion of Null elements:
+    HashSet (and LinkedHashSet) allows the insertion of null elements.
+    TreeSet does not (since the comparaison will resolve in a NPE).    
+    
+## Map Interface
+
+### What is a HashMap?
+
+### What is NavigableMap?
+
+It is a direct child of SortedMap interface, and a descendent of Map interface. 
+It contains methods related to navigation, like lowerKey and ceilingKey.
+
+### What is the difference between HashMap and HashTable?
+
+### Can we use a custo object as a key in a Map?
+
+Yes we can. The object we want to use as key must override equals() and hashcode() for that.
+
+### Why is it advisable to use an immutable object as key in a Map?
+
+So that we can get back any value from the map using the key. If a key changes, 
+then it will be impossible to get back the values. 
 
 
 ## Illustrations
