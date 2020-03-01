@@ -159,6 +159,21 @@ Insertion of Null elements:
     HashSet (and LinkedHashSet) allows the insertion of null elements.
     TreeSet does not (since the comparaison will resolve in a NPE).    
     
+## Concurrent Collection
+
+### What is Concurrent Collections?
+
+Is is a java v1.5 addition to the Collection util available in java.util.concurrent.
+It is contains a set of data structures that support concurrency.
+
+### What is iterator fail-fast, and is the Concurrent Collection iterator fail-fast?
+
+fail-fast means that when iterating over a collection using an iterator, if this collection is modifed, 
+a ConcurrentModicationException is thrown.
+
+The implementation of iterator in the Concurrent Collection package is fail-safe, meaning that
+a collection can be modifed while iterating.
+    
 ## Map Interface
 
 ### What is a HashMap?
@@ -167,6 +182,7 @@ Insertion of Null elements:
 
 It is a direct child of SortedMap interface, and a descendent of Map interface. 
 It contains methods related to navigation, like lowerKey and ceilingKey.
+
 
 ### What is the difference between HashMap and HashTable?
 
