@@ -69,6 +69,20 @@ Collections is a class that provided utility methods for the Collection interfac
         - ListIterator
         - Enumeration
 
+### What is the difference between the different cursors (Enumeration, Iterator, ListIterator)?
+
+- Enumeration is used for legacy classes objects (like Vector).
+  Iterator is used for any collection
+  ListIterator is used for lists
+  
+- Enumeration and Iterator have only a forward cursor.
+  ListIterator has both forward and backward cursors.
+
+- Enumeration allows only read operation 
+  Iterator allows read and remove
+  ListIterator allows read, remove, replace and add
+  
+
 ### How can we sort Collections?
 
 - Using a datastructure that is made to store elements in a sorted order like TreeSet and TreeHashSe.
@@ -86,7 +100,7 @@ public class ArrayList<E> extends AbstractList<E> implements List<E>, <b>RandomA
 public class Vector<E> extends AbstractList<E> implements List<E>, <b>RandomAccess</b>, ...
 public class Stack<E> extends <b>Vector<E></b>
 
-HashMap used a HashTable as its underlaying data strucutre.
+HashMap uses a HashTable as its underlaying data strucutre.
 Hashtable uses array of buckets to store its elements.
 
 ### What is the difference between Collection remove() and Iterator remove()?
@@ -159,6 +173,13 @@ Insertion of Null elements:
     HashSet (and LinkedHashSet) allows the insertion of null elements.
     TreeSet does not (since the comparaison will resolve in a NPE).    
     
+### What is the difference between ArrayList and Vector?
+
+- Vector is thred safe, while ArrayList is not.
+- Thus, ArrayList performs better since it is not synchronized.
+- Vector is a legacy class (since it came before JDK 1.2).
+
+    
 ## Concurrent Collection
 
 ### What is Concurrent Collections?
@@ -178,6 +199,13 @@ a collection can be modifed while iterating.
 
 ### What is a HashMap?
 
+- It is a collection of key-value pairs.
+- Keys cannot have duplicates, whereas values can.
+- Only one key can be null, whereas more than one value can be null.
+- Uses HashTable as its underlying data structure.
+
+
+
 ### What is NavigableMap?
 
 It is a direct child of SortedMap interface, and a descendent of Map interface. 
@@ -186,7 +214,7 @@ It contains methods related to navigation, like lowerKey and ceilingKey.
 
 ### What is the difference between HashMap and HashTable?
 
-### Can we use a custo object as a key in a Map?
+### Can we use a custom object as a key in a Map?
 
 Yes we can. The object we want to use as key must override equals() and hashcode() for that.
 

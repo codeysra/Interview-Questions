@@ -8,6 +8,8 @@ import java.util.TreeSet;
 public class SetImplementationsDemo {
 
     public static void main(String[] args) {
+        HashSet<Long> t = new HashSet<>();
+
         System.out.println("HashSet");
         Set<Integer> numbers = new HashSet<>();
         numbers.add(5);
